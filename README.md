@@ -24,6 +24,8 @@ Interact with a hosted version of this app live at [<https://robotf.ai/LLM_Token
 
 Welcome to the RoboTF LLM Token Estimator, a Streamlit web application that allows you to estimate the number of tokens for a given text input using a specified Hugging Face model's tokenizer. This tool is particularly useful for understanding how different models tokenize text.
 
+This wraps up the [autotiktokenizer](https://github.com/bhavnicksm/autotiktokenizer) project into a Streamlit app. Go check it out!
+
 ## About the Project
 
 Ever wonder how many tokens your favorite AI model needs to understand your text? With the RoboTF LLM Token Estimator, you can unlock the mystery of tokenization! Just enter your text and choose a model, and watch as we break down your input into tokens. It's like diving into the mind of an AI—but without all the heavy lifting. Whether you're a seasoned data scientist or just curious about how NLP works, this app is your key to understanding tokenization in a fun and interactive way!
@@ -205,4 +207,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Thanks to the Hugging Face community for providing a wide range of models and tokenizers.
 
-Special thanks to the developers of the autotiktokenizer library for making it easy to work with different tokenizers.
+Special thanks to the developers of the [autotiktokenizer](https://github.com/bhavnicksm/autotiktokenizer) library for making it easy to work with different tokenizers.
