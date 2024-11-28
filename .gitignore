@@ -1,0 +1,7 @@
+.env
+.streamlit/*
+*/.DS_Store
+*/*/.DS_Store
+.DS_Store
+./models
+models/*

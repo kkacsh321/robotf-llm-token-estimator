@@ -155,6 +155,23 @@ with just plain streamlit
 streamlit run RoboTF_LLM_Token_Estimator.py
 ```
 
+## Environment Variables
+
+If you need to access private Huggingface repos you will need to set the environment variable of `HF_TOKEN` to your huggingface api key.
+
+This can be done locally by doing:
+
+```bash
+export HF_TOKEN=<insert token>
+```
+
+In the docker compose file by replacing the `HF_TOKEN` variable
+
+Using docker by passing it at the docker run statement
+
+```bash
+docker run -e HF_TOKEN=<insert token> -p 8505:8505 robotf/robotf-llm-token-estimator
+```
 
 ## Contact
 
