@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  robotf-llm-token-estimator:
+    container_name: robotf-llm-token-estimator
+    platform: linux/arm64 ## Change to your platform
+    build: "."
+    command:
+      [
+        "streamlit",
+        "run",
+        "RoboTF_LLM_Token_Estimator.py",
+        "--server.port",
+        "8505",
+      ]
+    ports:
+      - 8505:8505

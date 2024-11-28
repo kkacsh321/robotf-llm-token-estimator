@@ -1,0 +1,27 @@
+name: AutoTag
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  docker:
+    name: Autotag
+    runs-on: [robotf-estimator-runner]
+
+    permissions: write-all
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
+      - uses: butlerlogic/action-autotag@1.1.2
+        env:
+          GITHUB_TOKEN: "${{ secrets.GH_TOKEN }}"
+        with:
+          strategy: package
+          root: "./"
