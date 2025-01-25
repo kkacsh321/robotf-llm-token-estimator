@@ -80,7 +80,7 @@ def main():
         # Text input for the model name
         model_name = st.text_area(
             "Enter the Hugging Face model name: (org/model_name)",
-            placeholder="mistralai/Mistral-7B-Instruct-v0.3", height=10  # Default model name
+            placeholder="mistralai/Mistral-7B-Instruct-v0.3", height=68  # Default model name
         )
 
         # Text area for the user's input text
